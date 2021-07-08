@@ -17,8 +17,8 @@ form_by_type = pharma.groupby(["glosa_FFE", "Laboratorio_Comercial"])
 print(form_by_type.first())
 
 print(pharma.sort_index(level=["glosa_FFE"]))
-pharma_pivot = pharma.pivot_table(values="glosa_FFE", index=["PC_Término_Preferido","Preferido_Fármacos_Familia_de_Productos"], columns="id_Bioequivalente")
-print(pharma_pivot)
+# pharma_pivot = pharma.pivot_table(values="glosa_FFE", index=["PC_Término_Preferido","Preferido_Fármacos_Familia_de_Productos"], columns="id_Bioequivalente")
+# print(pharma_pivot)
 
 print(pharma_sort)
 print(pharma_lab)
